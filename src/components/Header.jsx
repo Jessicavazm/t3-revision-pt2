@@ -5,5 +5,5 @@ export default function Header() {
     )
 }
 
-// Use this option when you need to export multiple functions
+// Use the option bellow when you need to export multiple functions
 // module.exports = Header;
