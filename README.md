@@ -12,6 +12,7 @@ Website to see https://babeljs.io
 - Unidirectional Data Flow: Data flows in a single direction, making debugging and application structure easier.
 - Each component is a function or class that returns a piece of UI (usually written in JSX). 
 - JSX is a syntax extension that lets you write HTML-like code inside JavaScript.
+- JSX always needs to return one HTML component, usually a <div>.
 - You need to use {} in order to write JS inside HTML elements.
 - NPX (Node Package Executor): Used to execute Node.js packages directly from the terminal without globally installing them.
 - Package Naming Rules: 
@@ -74,7 +75,7 @@ Make sure when you create these subfolders, you handle the import of these files
 
 - src
     - Assets: static files such as logo, visual components.
-    - Components: Reusable components that can be shared across different instances. Create one file for each component. In this course we will revise Functional and Classes Components.
+    - Components: Reusable components that can be shared across different instances. Create one file for each component. In this course we will revise Functional and Classes Components. Camel-case is preferred for Components.
     - Functions: Any specific type of functionalities you want to globalize and use in other files.
     - Pages: This folder will contain app.js files. In JS, it's a good practise to change the App.js to App.jsx to ensure more compatibility with React.
     - Stylesheets: For CSS files.
