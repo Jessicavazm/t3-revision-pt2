@@ -16,6 +16,7 @@ Website to see https://babeljs.io
 - < /> this denotes a component.
 - JSX is a syntax extension that lets you write HTML-like code inside JavaScript.
 - JSX always needs to return one HTML component, usually a <div>.
+- In JSX Components, you should define the class using className='' instead of class='' for Styling purposes.
 - You need to use {} in order to write JS inside HTML elements.
 - NPX (Node Package Executor): Used to execute Node.js packages directly from the terminal without globally installing them.
 - Package Naming Rules: 
@@ -101,3 +102,11 @@ It's a built in keyword. It's work as a parameter or function.
     function App() {
         return <Welcome name="Luke" />;
     }
+
+
+## Bootstrap
+Bootstrap is a popular front-end framework used to quickly design and build responsive, mobile-first websites. It provides a collection of pre-designed CSS styles, components, and JavaScript utilities, making web development faster and easier.
+
+- @material-ui/system
+- react-bootstrap
+- react-daisyui

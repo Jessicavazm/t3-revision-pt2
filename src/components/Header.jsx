@@ -1,7 +1,9 @@
 // export default before the function kw only exports that specific fn
 export default function Header() {
     return (
-        <h1>React Props Lesson</h1>
+        <div className='App-header'>
+            <h1>React Props Lesson</h1>
+        </div>
     )
 }
 

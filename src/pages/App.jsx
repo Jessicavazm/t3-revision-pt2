@@ -7,7 +7,7 @@ import FoodList from '../components/FoodList';
 
 function App() {
   return (
-    <div class='App'>
+    <div className='App'>
         <Header />
         <FoodList /> 
         <Footer />
