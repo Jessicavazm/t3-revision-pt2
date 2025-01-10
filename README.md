@@ -12,6 +12,7 @@ Website to see https://babeljs.io
 - Unidirectional Data Flow: Data flows in a single direction, making debugging and application structure easier.
 - Each component is a function or class that returns a piece of UI (usually written in JSX). 
 - Components can have subcomponents. An example of this would be a post has comments, comments would the subcomponent of the post component.
+- Ensure each component is uniquely identified using map method (index) and key concept.
 - < /> this denotes a component.
 - JSX is a syntax extension that lets you write HTML-like code inside JavaScript.
 - JSX always needs to return one HTML component, usually a <div>.

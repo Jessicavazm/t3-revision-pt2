@@ -7,8 +7,9 @@ export default function FoodList() {
     return (
         <section>
             {
-                foods.map(food => {
-                    return <p><FoodCart foodName={food}/></p>
+                foods.map((food, index) => {
+                    // key={index} uniquely identify each component
+                    return <p><FoodCart key={index} foodName={food}/></p>
                 })
             }
         </section>
