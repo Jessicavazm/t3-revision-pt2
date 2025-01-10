@@ -1,4 +1,4 @@
-import FoodCart from "./FoodCart";
+import FoodCart from "./FoodCard";
 
 const foods = ['pizza', 'pasta', 'spaghetti', 'ramen', 'eggs benedict', 'dumplings', 'noodles', 'pork bun'];
 
@@ -6,10 +6,9 @@ const foods = ['pizza', 'pasta', 'spaghetti', 'ramen', 'eggs benedict', 'dumplin
 export default function FoodList() {
     return (
         <section>
-
             {
                 foods.map(food => {
-                    return <FoodCart />
+                    return <p><FoodCart foodName={food}/></p>
                 })
             }
         </section>

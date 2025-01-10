@@ -12,6 +12,7 @@ Website to see https://babeljs.io
 - Unidirectional Data Flow: Data flows in a single direction, making debugging and application structure easier.
 - Each component is a function or class that returns a piece of UI (usually written in JSX). 
 - Components can have subcomponents. An example of this would be a post has comments, comments would the subcomponent of the post component.
+- < /> this denotes a component.
 - JSX is a syntax extension that lets you write HTML-like code inside JavaScript.
 - JSX always needs to return one HTML component, usually a <div>.
 - You need to use {} in order to write JS inside HTML elements.
@@ -81,3 +82,21 @@ Make sure when you create these subfolders, you handle the import of these files
     - Pages: This folder will contain app.js files. In JS, it's a good practise to change the App.js to App.jsx to ensure more compatibility with React.
     - Stylesheets: For CSS files.
     - Index.js will be left outside the subfolders.
+
+
+## Props - Property
+It's a built in keyword. It's work as a parameter or function. 
+
+- A way to pass data from a parent component to a child component.
+- Immutable (cannot be changed by the child component receiving them).
+- The main method for customizing components and making them reusable.
+- You pass props multiple times.
+- When you return props, it needs to be in key- value pairs.
+
+    function Welcome(props) {
+        return <h1>Hello, {props.name}!</h1>;
+    }
+
+    function App() {
+        return <Welcome name="Luke" />;
+    }
