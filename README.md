@@ -110,3 +110,7 @@ Bootstrap is a popular front-end framework used to quickly design and build resp
 - @material-ui/system
 - react-bootstrap
 - react-daisyui
+
+
+## Classes components
+This was the pref
