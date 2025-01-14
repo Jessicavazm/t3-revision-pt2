@@ -113,4 +113,59 @@ Bootstrap is a popular front-end framework used to quickly design and build resp
 
 
 ## Classes components
-This was the pref
+Classes were introduced in ES6 as a cleaner and more readable way to create objects and manage inheritance. They're essentially syntactic sugar over JavaScript's prototype-based inheritance.
+
+Definition:
+- Created using the class keyword.
+- Name in conventional: Camel case + first letter in Capital
+
+        class Car {
+        constructor(model) {
+            this.model = model;
+        }
+
+        drive() {
+            console.log(`${this.model} is driving!`);
+        }
+        }
+
+
+Methods:
+- Constructor: A special method called when an instance of the class is created.
+- Methods: defined inside a class are automatically added to the object's prototype.
+
+Inheritance:
+- Classes can inherit from other classes using extends.
+- The super() method is used to call the constructor of the parent class(this is an essential step).
+
+        class SportsCar extends Car {
+        constructor(model, maxSpeed) {
+            super(model);
+            this.maxSpeed = maxSpeed;
+        }
+
+        showSpeed() {
+            console.log(`${this.model} can reach ${this.maxSpeed} km/h!`);
+        }
+        }
+
+
+Properties:
+- Properties can be defined inside the constructor or using class fields (public or private).
+- Private properties start with # and are only accessible within the class.
+
+Instantiation:
+- Objects are created using the new keyword.
+
+        const myCar = new Car('Toyota');
+        myCar.drive(); // Toyota is driving!
+
+
+### Static Variables
+Static variables in JavaScript are properties or methods associated with a class itself, rather than with instances of the class. These are defined using the static keyword and can only be accessed directly from the class, not from an instance.
+
+- Static variables belong to the class, not to any instance created from the class.
+- They are shared across all instances of the class (if the instances interact with them via the class).
+- Static properties or methods are used for functionality or data that is not tied to any specific instance but relevant to the class as a whole.
+- Static variables or methods are not accessible through instances of the class
+- Declared inside a class using the 'static' keyword.
