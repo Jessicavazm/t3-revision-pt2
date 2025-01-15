@@ -179,6 +179,7 @@ In JavaScript, particularly in React class components, state refers to an object
 
 - State is managed within the class component and cannot be directly accessed or modified by other components.
 - When state changes, the component automatically re-renders to reflect the new data.
+- Don't update the state directly.
 - Pass 'props' to the base class: If a class extends another class, and you need to access or pass props, you must use constructor() and call super(props).
 - this.state
     - initialize state in the constructor of the class component.

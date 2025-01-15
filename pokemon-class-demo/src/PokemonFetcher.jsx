@@ -1,5 +1,6 @@
 import { Component } from "react";
 import PokemonCard from "./PokemonCard";
+import { Button } from "react-bootstrap";
 
 // const pokemonList = ['pikachu', 'ditto', 'mew', 'charmander'];
 
@@ -24,6 +25,9 @@ export default class PokemonFetcher extends Component {
                         return <PokemonCard name={pokemon} />
                     })
                 }
+                <button onClick={() => {
+                    this.setState({pokemonList:[]})
+                }}>Empty the State</button>
             </div>
         )
     }
