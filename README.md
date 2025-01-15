@@ -115,6 +115,9 @@ Bootstrap is a popular front-end framework used to quickly design and build resp
 ## Classes components
 Classes were introduced in ES6 as a cleaner and more readable way to create objects and manage inheritance. They're essentially syntactic sugar over JavaScript's prototype-based inheritance.
 
+- Classes require a render() method because it is a core part of how class components function. The render() method is responsible for returning the JSX that defines what should be displayed in the DOM.
+
+
 Definition:
 - Created using the class keyword.
 - Name in conventional: Camel case + first letter in Capital
@@ -169,3 +172,29 @@ Static variables in JavaScript are properties or methods associated with a class
 - Static properties or methods are used for functionality or data that is not tied to any specific instance but relevant to the class as a whole.
 - Static variables or methods are not accessible through instances of the class
 - Declared inside a class using the 'static' keyword.
+
+
+## Class State
+In JavaScript, particularly in React class components, state refers to an object that holds dynamic data or information that influences the rendering of a component. Unlike props, which are read-only and passed to a component, state is mutable and managed internally by the component. States stores objects.
+
+- State is managed within the class component and cannot be directly accessed or modified by other components.
+- When state changes, the component automatically re-renders to reflect the new data.
+- Pass 'props' to the base class: If a class extends another class, and you need to access or pass props, you must use constructor() and call super(props).
+- this.state
+    - initialize state in the constructor of the class component.
+    - used to store information, data.
+    - used to access current state.
+- this.setState()
+    - Update the state.
+
+
+### Constructor() Method:
+- The constructor() method is used to initialize an object’s properties and set up its initial state.
+- Constructor() method can also be used to bind event handlers or methods.
+
+
+### Super() Method:
+- The super method is required in a class constructor when the class extends another class. It ensures the parent class is properly initialized.
+
+When You Don’t Need Constructor or Super:
+- No State or Initialization: If your class component doesn’t need state or custom initialization, you can omit the constructor.

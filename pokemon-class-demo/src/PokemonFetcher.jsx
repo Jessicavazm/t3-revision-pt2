@@ -1,6 +1,7 @@
 import { Component } from "react";
+import PokemonCard from "./PokemonCard";
 
-const pokemonList = ['pikachu', 'ditto', 'mew', 'charmander'];
+// const pokemonList = ['pikachu', 'ditto', 'mew', 'charmander'];
 
 export default class PokemonFetcher extends Component {
     // Create constructor() to initialise the class's properties && state
@@ -10,13 +11,20 @@ export default class PokemonFetcher extends Component {
 
         // Use 'this.' since you are working with class components
         this.state = {
-            pokemonList: []
+            pokemonList: ['pikachu', 'ditto', 'mew', 'charmander']
         }
     }
 
-    render(){
+    render() {
         return (
-            <h1>Pokemon Data</h1>
+            <div>
+                <h1>Pokemon Data</h1>
+                {
+                    this.state.pokemonList.map(pokemon => {
+                        return <PokemonCard name={pokemon} />
+                    })
+                }
+            </div>
         )
     }
 }
