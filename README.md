@@ -216,3 +216,12 @@ When You Don’t Need Constructor or Super:
 
 - Error handling: These methods are called when there's an error during rendering, in a lifecycle method, or in the constructor of any child component.
     - componentDidCatch()
+
+
+### Spread Operator ...
+The spread operator is used to "spread out" the elements of an array, object, or string into a new array, object, or function call.
+
+    const numbers = [1, 2, 3];
+    const moreNumbers = [...numbers, 4, 5];
+    console.log(moreNumbers); // Output: [1, 2, 3, 4, 5]
+
