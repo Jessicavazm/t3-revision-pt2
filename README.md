@@ -199,3 +199,20 @@ In JavaScript, particularly in React class components, state refers to an object
 
 When You Don’t Need Constructor or Super:
 - No State or Initialization: If your class component doesn’t need state or custom initialization, you can omit the constructor.
+
+
+## Classes Lifecycle methods
+- Mounting/ Initialisation: These methods are called in the following order when an instance of a component is created and inserted into the DOM: 
+    - constructor()
+    - render()
+    - componentDidMount() 
+
+- Updating: An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
+    - render()
+    - componentDidUpdate()
+
+- Unmounting/ Finalisation: This method is called when a component is being removed from the DOM.
+    - componentWillUnmount()
+
+- Error handling: These methods are called when there's an error during rendering, in a lifecycle method, or in the constructor of any child component.
+    - componentDidCatch()

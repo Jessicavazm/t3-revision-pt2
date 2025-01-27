@@ -16,6 +16,17 @@ export default class PokemonFetcher extends Component {
         }
     }
 
+    async componentDidMount() {
+        // Generate a random Pokemon ID Number
+        let randomNumber = Math.ceil(Math.random() * 1025);
+        // Pass random Pokemon Number to fetch
+        let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomNumber}`)
+        let data = await response.json();
+        // Set fetch response data to state
+        this.setState({pokemonList: [data.name]});
+        console.log('PokemonFetcher first load on the page');
+    }
+
     render() {
         return (
             <div>
