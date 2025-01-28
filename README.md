@@ -116,10 +116,10 @@ Bootstrap is a popular front-end framework used to quickly design and build resp
 Classes were introduced in ES6 as a cleaner and more readable way to create objects and manage inheritance. They're essentially syntactic sugar over JavaScript's prototype-based inheritance.
 
 - Classes require a render() method because it is a core part of how class components function. The render() method is responsible for returning the JSX that defines what should be displayed in the DOM.
+- When trying to access a variable or function within the function itself, you need to use the 'this' keyword.
 
-
-Definition:
-- Created using the class keyword.
+### Defining a class:
+- Created using the 'class' keyword.
 - Name in conventional: Camel case + first letter in Capital
 
         class Car {
@@ -133,11 +133,11 @@ Definition:
         }
 
 
-Methods:
+### Methods:
 - Constructor: A special method called when an instance of the class is created.
 - Methods: defined inside a class are automatically added to the object's prototype.
 
-Inheritance:
+### Inheritance:
 - Classes can inherit from other classes using extends.
 - The super() method is used to call the constructor of the parent class(this is an essential step).
 
@@ -153,18 +153,18 @@ Inheritance:
         }
 
 
-Properties:
+### Properties:
 - Properties can be defined inside the constructor or using class fields (public or private).
 - Private properties start with # and are only accessible within the class.
 
-Instantiation:
+### Instantiation:
 - Objects are created using the new keyword.
 
         const myCar = new Car('Toyota');
         myCar.drive(); // Toyota is driving!
 
 
-### Static Variables
+## Static Variables
 Static variables in JavaScript are properties or methods associated with a class itself, rather than with instances of the class. These are defined using the static keyword and can only be accessed directly from the class, not from an instance.
 
 - Static variables belong to the class, not to any instance created from the class.
@@ -225,3 +225,6 @@ The spread operator is used to "spread out" the elements of an array, object, or
     const moreNumbers = [...numbers, 4, 5];
     console.log(moreNumbers); // Output: [1, 2, 3, 4, 5]
 
+
+### Events
+- On click only allows event function to be executed. If you need more than one function to be executed, you can use an arrow function and calls both functions inside of it.
