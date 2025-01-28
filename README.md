@@ -187,7 +187,7 @@ In JavaScript, particularly in React class components, state refers to an object
     - used to access current state.
 - this.setState()
     - Update the state.
-
+- When checking condition inside of render block, you can use the Ternary Operator or have the condition inside of a function and call that function inside of the render method.
 
 ### Constructor() Method:
 - The constructor() method is used to initialize an object’s properties and set up its initial state.
