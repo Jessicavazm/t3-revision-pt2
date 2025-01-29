@@ -25,6 +25,17 @@ export default class PostContainer extends Component {
         )
     }
 
+    // Parent component creates a function to update state 
+    // This function is passed as prop to child component
+    updatePostData = (newAuthor, newLocation, newContent) => {
+        this.setState({
+            author: newAuthor,
+            lastUpdated: Date.now(),
+            location: newLocation,
+            content: newContent
+        })
+    }
+
     // Ternary operator to check a condition
     render() {
         return (
@@ -32,13 +43,15 @@ export default class PostContainer extends Component {
                 <button onClick={this.toggleEditMode}>Toggle Edit Mode</button>
                 {
                     this.state.isEditing ?
-                        <EditablePost 
+                        <EditablePost
                             // Pass all of them using props, one at a time 
                             author={this.state.author}
                             dateCreated={this.state.dateCreated}
                             location={this.state.location}
                             content={this.state.content}
                             lastUpdated={this.state.lastUpdated}
+                            // Passing the function as a prop
+                            updateData={this.updatePostData}
 
                             // Could pass the entire state variables in one go
                             parentState={this.state}
