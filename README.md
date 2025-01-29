@@ -95,13 +95,13 @@ It's a built in keyword. It's work as a parameter or function.
 - You pass props multiple times.
 - When you return props, it needs to be in key- value pairs.
 
-    function Welcome(props) {
-        return <h1>Hello, {props.name}!</h1>;
-    }
+        function Welcome(props) {
+            return <h1>Hello, {props.name}!</h1>;
+        }
 
-    function App() {
-        return <Welcome name="Luke" />;
-    }
+        function App() {
+            return <Welcome name="Luke" />;
+        }
 
 
 ## Bootstrap
