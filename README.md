@@ -227,4 +227,25 @@ The spread operator is used to "spread out" the elements of an array, object, or
 
 
 ### Events
-- On click only allows event function to be executed. If you need more than one function to be executed, you can use an arrow function and calls both functions inside of it.
+On click only allows event function to be executed. If you need more than one function to be executed, you can use an arrow function and calls both functions inside of it.
+
+Types of Events
+
+- Mouse Events: click, double click, mouse enter, mouse leave, mouse move.
+- Keyboard Events: keydown, key up, keypress.
+- Form Events: submit, change, focus, blur.
+- Window Events: load, resize, scroll.
+
+### How to Handle Events?
+You use event listeners to “listen” for specific events and run some code when they happen.
+
+    // Select a button
+    const button = document.querySelector('button');
+
+    // Add a click event listener
+    button.addEventListener('click', () => {
+    alert('Button clicked!');
+    });
+
+
+### Forms in React
