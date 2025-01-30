@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar';
+import ProjectLayout from './pages/_templates/ProjectLayout';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import TerminalAppProject from './pages/TerminalAppProject';
 import HomePage from './pages/HomePage';
 import './styles/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -17,6 +19,9 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/contact' element={<ContactPage />} />
+          <Route path='/projects' element={<ProjectLayout />} />
+            <Route path='/projects/terminalApp' element={<TerminalAppProject/>} />
+            <Route path='terminalApp' element={<TerminalAppProject />} />
         </Routes>
 
       </BrowserRouter>
