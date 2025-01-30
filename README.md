@@ -1,7 +1,4 @@
-# Term 3 Revision Week 5 - 7
-
-
-## Week 5 - React
+# Term 3 Revision Week 5 - 6
 
 ## React JS
 Front end Web Framework. It's a tool used to build websites, the pages that you see in the browser. React was created and maintained by Face(now Meta). 
@@ -251,7 +248,3 @@ You use event listeners to “listen” for specific events and run some code wh
 ### Styling and CSS
 - Navlink tag is preferred over link tag because you can use add style to it using Css.
 
-
-
-### Hooks
-- useParams() 
