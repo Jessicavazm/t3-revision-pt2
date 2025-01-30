@@ -250,3 +250,8 @@ You use event listeners to “listen” for specific events and run some code wh
 
 ### Styling and CSS
 - Navlink tag is preferred over link tag because you can use add style to it using Css.
+
+
+
+### Hooks
+- useParams() 

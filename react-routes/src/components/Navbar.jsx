@@ -8,7 +8,7 @@ export default function Navbar() {
             Home</NavLink>
             <NavLink to={'/about'} className={({isActive}) => { return isActive ? "active":""}}>About me</NavLink>
             <NavLink to={'/contact'} className={({isActive}) => { return isActive ? "active":""}}>Contact me</NavLink>
-            <NavLink to={'/projects'} className={({isActive}) => { return isActive ? "active":""}}>My Projects</NavLink>
+            <NavLink to={'/projects'} className={({isActive}) => { return isActive ? "active":""}} end>My Projects</NavLink>
             <NavLink to={'/projects/terminalApp'} className={({isActive}) => { return isActive ? "active":""}}>My Terminal App</NavLink>
         </nav>
     )
